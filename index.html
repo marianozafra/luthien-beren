@@ -1,14 +1,75 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <head>
     <title>Luthien and Beren</title>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-</head>
-<body>
-    <p>This is the story of Luthien and Beren.</p>
-</body>
+    <style>
+      /* set up the flex box and grid layouts */
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        margin: 20px 0;
+        font-size: 2.5rem;
+      }
+
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin: 20px 0;
+      }
+
+      .image {
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      /* set up the poems */
+      .poem {
+        margin: 10px 0;
+        text-align: center;
+        font-style: italic;
+        font-size: 1rem;
+        line-height: 1.2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Luthien and Beren</h1>
+
+    <h2>Luthien</h2>
+    <div class="image-grid">
+      <div class="image" style="background-image: url('luthien1.jpg');"></div>
+      <div class="image" style="background-image: url('luthien2.jpg');"></div>
+      <div class="image" style="background-image: url('luthien3.jpg');"></div>
+      <div class="image" style="background-image: url('luthien4.jpg');"></div>
+      <div class="image" style="background-image: url('luthien5.jpg');"></div>
+      <div class="image" style="background-image: url('luthien6.jpg');"></div>
+    </div>
+    <p class="poem">Luthien, fairest and most beautiful of all the children of Iluvatar.</p>
+    <p class="poem">Luthien, whose voice was sweeter than any bird or harp.</p>
+    <p class="poem">Luthien, whose love for Beren knew no bounds.</p>
+
+    <h2>Beren</h2>
+    <div class="image-grid">
+      <div class="image" style="background-image: url('beren1.jpg');"></div>
+      <div class="image" style="background-image: url('beren2.jpg');"></div>
+      <div class="image" style="background-image: url('beren3.jpg');"></div>
+      <div class="image" style="background-image: url('beren4.jpg');"></div>
+      <div class="image" style="background-image: url('beren5.jpg');"></div>
+      <div class="image" style="background-image: url('beren6.jpg');"></div>
+    </div>
+    <p class="poem">Beren, son of Barahir, last heir of the House of Beor.</p>
+    <p class="poem">Beren, who defied the power of Morgoth and dared to steal a Silmaril.</p>
+    <p class="poem">Beren, who loved Luthien with all his heart and soul.</p>
+  </body>
 </html>
